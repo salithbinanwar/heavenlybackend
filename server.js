@@ -10,7 +10,9 @@ import productRoutes from './routes/productRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 dotenv.config()
 
-const port = 3000 || process.env.PORT
+// const port = 3000 || process.env.PORT
+
+const port = 3000
 
 connectDB()
 

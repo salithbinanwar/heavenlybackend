@@ -13,5 +13,6 @@ router.post('/register', adminRegister)
 router.post('/login', adminLogin) // Admin login route
 router.route('/products').post(adminProtect, addProduct) // Add route for adding products, protected by admin middleware
 router.post('/admin/addproduct', adminProtect, addProduct)
+router.route('/products/:id').delete(adminProtect, deleteProduct)
 
 export default router

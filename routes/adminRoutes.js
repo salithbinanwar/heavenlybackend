@@ -3,6 +3,7 @@ import {
   addProduct,
   adminLogin,
   adminRegister,
+  deleteProduct,
 } from '../controllers/adminController.js'
 import { adminProtect } from '../middleware/adminAuthMiddleware.js'
 
